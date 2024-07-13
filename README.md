@@ -1,0 +1,7 @@
+My 17th assignment! Cleaning up someone else's code wasn't something I had done much of, but I have refactored my own before. This was a good opportunity to take note of what the code is trying to do, and figure out a way to improve it. 
+
+The changes I made is as follows:  
+1. Moved from procedural style to class-based forecast generation. Because of that, a lot was able to be pinned to the class such as various getters/setters that could be integrated into the main program at will.
+2. The program logic looks a bit more intimidating, but it really just comes down to the one create option needing a lot of inputs. You could cut out the default weather at the top and the main app would be almost identical in length to the old program.
+3. There is a lot more error handling with the try/except blocks and the individual type/value checking in the forecast class's functions. 
+4. Finally, there is the ability to both create forecasts via CDI and get their information. The old program could get their data as either a printed string or a dictionary, but it was heavily convoluted and could be made much simpler and more localized to a single source instead of 3-4 functions with confusing naming and overlapping responsibilities. Mine can either simply print the desired info or provide a dictionary of the forecast's stats, though at the moment there is no reason to do the latter in the main program without expanding the scope to export to file or something. 
